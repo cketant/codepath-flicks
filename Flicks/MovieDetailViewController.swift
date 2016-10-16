@@ -9,6 +9,7 @@
 import UIKit
 
 class MovieDetailViewController: UIViewController {
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var movieImgView: UIImageView!
     @IBOutlet weak var movieDescLbl: UILabel!
     @IBOutlet weak var ratingsLbl: UILabel!
@@ -18,6 +19,8 @@ class MovieDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let width: CGFloat  = self.scrollView.frame.size.width
+        self.scrollView.contentSize = CGSizeFromString("{\(width), 1000}")
         let path: String = movieDict.value(forKey: "poster_path") as! String
         let url: URL! = URL(string: "https://image.tmdb.org/t/p/w500\(path)")
         self.movieImgView.setImageWith(url)
