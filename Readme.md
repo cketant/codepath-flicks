@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![alt text](https://github.com/cketant/codepath-tip-calculator/blob/master/walkthrough.gif "Walkthrough1")
+![alt text](https://github.com/cketant/codepath-flicks/blob/master/walkthrough.gif "Walkthrough1")
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
